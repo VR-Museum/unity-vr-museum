@@ -1,0 +1,4 @@
+Assets/models/cuarz/Drusa_Cuarzo.obj filter=lfs diff=lfs merge=lfs -text
+Assets/models/jasper/model.obj filter=lfs diff=lfs merge=lfs -tex
+Assets/models/actinolite/model.obj filter=lfs diff=lfs merge=lfs -text
+Assets/models/chrysoprase/chrysoprase.obj filter=lfs diff=lfs merge=lfs -text
