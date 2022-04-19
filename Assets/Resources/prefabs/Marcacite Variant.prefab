@@ -31,6 +31,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.185
       objectReference: {fileID: 0}
+    - target: {fileID: 3063200922452367011, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
+      propertyPath: attachmentFlags
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063200922452367013, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
+      propertyPath: hardness
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3063200922452367015, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
       propertyPath: slides.Array.size
       value: 1
@@ -41,7 +49,7 @@ PrefabInstance:
       objectReference: {fileID: 7335802760362264723}
     - target: {fileID: 3063200922452367018, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
       propertyPath: m_Name
-      value: Marcacite
+      value: Marcacite Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3063200922452367038, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
       propertyPath: m_RootOrder

@@ -13,6 +13,7 @@ namespace src.museum.quiz.model.item
         public Transform mineralCenter;
         [NonSerialized]
         public GameObject MineralObject;
+        public float hardness = 5;
 
         private void Start()
         {

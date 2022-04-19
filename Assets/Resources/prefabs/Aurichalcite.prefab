@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attachmentFlags: 44
+  attachmentFlags: 85
   attachmentOffset: {fileID: 0}
   catchingSpeedThreshold: -1
   releaseVelocityStyle: 1
@@ -260,6 +260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineral: 7
   mineralCenter: {fileID: 6659942797133290071}
+  hardness: 0
 --- !u!114 &1480335474853610664
 MonoBehaviour:
   m_ObjectHideFlags: 0

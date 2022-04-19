@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HardnessPlane
+  m_Shader: {fileID: 4800000, guid: a47d2d45bcb86274dae55ae583ba6292, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _HeightMap:
+        m_Texture: {fileID: 8600000, guid: 4fb228b865165ad4e9ba42505ff71af3, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 3a19bbc024ff0fa4ba160c2922d7adf4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 0dfa948fd183d98489fe1325d33de5f4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Glossiness: 0.5
+    - _HeightAmount: 0.35
+    - _Metallic: 0
+    m_Colors:
+    - _BottomColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _NormalMap: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
