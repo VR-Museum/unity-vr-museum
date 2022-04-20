@@ -33,7 +33,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3063200922452367011, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
       propertyPath: attachmentFlags
-      value: 85
+      value: 94
       objectReference: {fileID: 0}
     - target: {fileID: 3063200922452367013, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
       propertyPath: hardness
