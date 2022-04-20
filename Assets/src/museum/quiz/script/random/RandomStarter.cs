@@ -10,6 +10,7 @@ namespace src.museum.quiz.script.random
 {
     public class RandomStarter : MonoBehaviour
     {
+        public static List<GameObject> SpawnPoints = new List<GameObject>();
         public List<string> prefabsPaths;
         private List<string> _unusedPrefabsPaths;
         
@@ -70,13 +71,21 @@ namespace src.museum.quiz.script.random
             if (_mineralsToSpawn is {Count: > 0} && DateTime.Now.Subtract(_previousSpawnTime).TotalSeconds > _spawnDelay)
             {
                 var prefab = _mineralsToSpawn.First();
-                var position = transform.position;
                 var textureOffset = CalculateOffset(prefab);
                 _mineralsToSpawn.Remove(prefab);
                 _previousSpawnTime = DateTime.Now;
+                var spawnPoint = gameObject;
+                if (SpawnPoints.Count > 0)
+                {
+                    var index = _random.Next() % SpawnPoints.Count;
+                    spawnPoint = SpawnPoints[index];
+                    SpawnPoints.Remove(spawnPoint);
+                }
+
+                var spawnPosition = spawnPoint.transform.position;
                 Instantiate(
                     prefab, 
-                    new Vector3(position.x + textureOffset.x, position.y + 0.5f + textureOffset.y, position.z + textureOffset.z), 
+                    new Vector3(spawnPosition.x + textureOffset.x, spawnPosition.y + 0.2f + textureOffset.y, spawnPosition.z + textureOffset.z), 
                     prefab.transform.rotation
                 );
             }
@@ -134,6 +143,11 @@ namespace src.museum.quiz.script.random
                 Stand = stand;
                 Loading = loading;
             }
+        }
+
+        private void OnDestroy()
+        {
+            SpawnPoints = new List<GameObject>();
         }
     }
 }
