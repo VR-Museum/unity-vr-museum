@@ -260,7 +260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineral: 5
   mineralCenter: {fileID: 5036847572744229575}
-  hardness: 0
+  hardness: 7
 --- !u!114 &5036847572744229572
 MonoBehaviour:
   m_ObjectHideFlags: 0
