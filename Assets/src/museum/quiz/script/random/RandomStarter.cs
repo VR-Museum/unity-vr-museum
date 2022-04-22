@@ -68,7 +68,7 @@ namespace src.museum.quiz.script.random
                 
             }
             
-            if (_mineralsToSpawn is {Count: > 0} && DateTime.Now.Subtract(_previousSpawnTime).TotalSeconds > _spawnDelay)
+            if (_mineralsToSpawn.Count > 0 && DateTime.Now.Subtract(_previousSpawnTime).TotalSeconds > _spawnDelay)
             {
                 var prefab = _mineralsToSpawn.First();
                 var textureOffset = CalculateOffset(prefab);
