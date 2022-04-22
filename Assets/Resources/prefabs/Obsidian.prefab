@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 918416971272763291}
   - component: {fileID: 918416971272763288}
   - component: {fileID: 918416971272763289}
+  - component: {fileID: 4051316599423068830}
   m_Layer: 0
   m_Name: Obsidian
   m_TagString: Untagged
@@ -243,6 +244,25 @@ MonoBehaviour:
   engaged: 0
   buttonDown: 0
   buttonUp: 0
+--- !u!114 &4051316599423068830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3484330801860469377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e336a5bdd2746cabd031ff018692bca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MineralPart:
+  - newMineral: {fileID: 5768932038388401141, guid: 125500d85bbae4742aa8a0067a549591, type: 3}
+    newMineralSize: 0.2
+  - newMineral: {fileID: 1592065559671731929, guid: cafde11c543f20646a97a63883d0b26d, type: 3}
+    newMineralSize: 0.7
+  - newMineral: {fileID: 3407337859390802699, guid: a65484b77a664714e99d579df05c96ee, type: 3}
+    newMineralSize: 0.1
 --- !u!1 &5608986526403535428
 GameObject:
   m_ObjectHideFlags: 0

@@ -48,6 +48,10 @@ namespace src.museum.quiz.script
             {
                 renderer.enabled = false;
             }
+            foreach (var light in GetComponentsInChildren<Light>())
+            {
+                light.enabled = false;
+            }
         }
     
         public void CheckMinerals()
