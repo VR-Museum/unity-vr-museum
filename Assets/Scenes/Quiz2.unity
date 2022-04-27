@@ -7127,7 +7127,7 @@ MonoBehaviour:
   hardnessHeightMap: {fileID: 8600000, guid: 4fb228b865165ad4e9ba42505ff71af3, type: 2}
   heightMapUpdate: {fileID: 2100000, guid: f2c40bcc234efb747880efbade95c99a, type: 2}
   hardnessMultiplier: 10
-  hardnessText: {fileID: 0}
+  hardnessText: {fileID: 517424492}
 --- !u!64 &1348402559
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9429,6 +9429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ac3db49d15e01543af3ce7cf378a6dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyMineral: 0
 --- !u!1 &1825333054
 GameObject:
   m_ObjectHideFlags: 0
@@ -9491,6 +9492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ac3db49d15e01543af3ce7cf378a6dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyMineral: 0
 --- !u!135 &1825333058
 SphereCollider:
   m_ObjectHideFlags: 0
