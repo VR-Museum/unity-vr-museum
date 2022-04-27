@@ -85,7 +85,7 @@ namespace src.museum.quiz.script.random
                 var spawnPosition = spawnPoint.transform.position;
                 Instantiate(
                     prefab, 
-                    new Vector3(spawnPosition.x + textureOffset.x, spawnPosition.y + 0.2f + textureOffset.y, spawnPosition.z + textureOffset.z), 
+                    new Vector3(spawnPosition.x + textureOffset.x, spawnPosition.y + 0.3f + textureOffset.y, spawnPosition.z + textureOffset.z), 
                     prefab.transform.rotation
                 );
             }

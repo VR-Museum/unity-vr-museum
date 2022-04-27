@@ -17,6 +17,8 @@ namespace src.museum.quiz.script
     [RequireComponent( typeof( QuizItem ) )]
     public class MineralAsButton : HoverButton
     {
+        public Boolean startEnabled = false;
+        
         private static List<MineralAsButton> _allObjectsInfo = new List<MineralAsButton>();
         
         private List<GameObject> _slides;
@@ -40,7 +42,7 @@ namespace src.museum.quiz.script
             _showingSlides = false;
             UpdateAllSlidesRenderers(false);
             
-            enabled = false;
+            enabled = startEnabled;
             
             _allObjectsInfo.Add(this);
         }

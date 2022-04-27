@@ -20,11 +20,11 @@ namespace src.museum.quiz.script.decomposition
             {
                 var decompositionItem = mineral.GetComponent<DecompositionItem>();
                 Decompose(decompositionItem);
-                // decompositionItem.enabled = false;
                 DecomposableMinerals.Remove(mineral);
                 QuizComposer.SavedItems.ForEach(pair => pair.Value.RemoveAll(item => item.MineralObject == mineral));
                 QuizComposer.AllItems.RemoveAll(item => item.MineralObject == mineral);
-                Destroy(mineral);
+                decompositionItem.enabled = false;
+                // Destroy(mineral);
             }
         }
 
