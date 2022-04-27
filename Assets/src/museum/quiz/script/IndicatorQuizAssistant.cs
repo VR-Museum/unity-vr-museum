@@ -120,7 +120,7 @@ namespace src.museum.quiz.script
                 }
                 else
                 {
-                    _contactsMinerals.Add(quizItem, new List<Collision>());
+                    _contactsMinerals.Add(quizItem, new List<Collision>{collision});
                 }
             }
         }

@@ -10,7 +10,7 @@ namespace src.museum.quiz.script.random
 {
     public class RandomStarter : MonoBehaviour
     {
-        public static List<GameObject> SpawnPoints = new List<GameObject>();
+        public static HashSet<GameObject> SpawnPoints = new HashSet<GameObject>();
         public List<string> prefabsPaths;
         private List<string> _unusedPrefabsPaths;
         
@@ -78,7 +78,7 @@ namespace src.museum.quiz.script.random
                 if (SpawnPoints.Count > 0)
                 {
                     var index = _random.Next() % SpawnPoints.Count;
-                    spawnPoint = SpawnPoints[index];
+                    spawnPoint = SpawnPoints.ToList()[index];
                     SpawnPoints.Remove(spawnPoint);
                 }
 
@@ -147,7 +147,7 @@ namespace src.museum.quiz.script.random
 
         private void OnDestroy()
         {
-            SpawnPoints = new List<GameObject>();
+            SpawnPoints = new HashSet<GameObject>();
         }
     }
 }
