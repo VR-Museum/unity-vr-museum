@@ -6892,6 +6892,10 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.125
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012749712888, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: doNotDestroy
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
 --- !u!1 &202026849
@@ -17668,6 +17672,7 @@ MonoBehaviour:
   hardnessHeightMap: {fileID: 8600000, guid: 4fb228b865165ad4e9ba42505ff71af3, type: 2}
   heightMapUpdate: {fileID: 2100000, guid: f2c40bcc234efb747880efbade95c99a, type: 2}
   hardnessMultiplier: 10
+  hardnessText: {fileID: 0}
 --- !u!1 &547826997
 GameObject:
   m_ObjectHideFlags: 0
@@ -60680,12 +60685,6 @@ MonoBehaviour:
   buttonDown: 0
   buttonUp: 0
   localMoveDistance: {x: 0.05, y: 0, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.9
-  engaged: 0
-  buttonDown: 0
-  buttonUp: 0
-  buttonDownDelay: 0
 --- !u!114 &2023029096
 MonoBehaviour:
   m_ObjectHideFlags: 0

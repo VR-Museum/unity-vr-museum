@@ -11,20 +11,16 @@ namespace src.museum.quiz.script
     public class IndicatorQuizAssistant : MonoBehaviour
     {
         private List<MineralName> _expectedMinerals;
-        public float activatingDistance = 0.3f;
         public GameObject mineralNameText;
-        
+
+        private readonly Dictionary<QuizItem, List<Collision>> _contactsMinerals = new Dictionary<QuizItem, List<Collision>>();
+
         public Renderer highlightRenderer;
         
         public Material success;
         public Material partialSuccess;
         public Material failure;
     
-        void Start()
-        {
-            ColorSelf(Color.clear);
-        }
-
         public void SetLoadsText()
         {
             mineralNameText.GetComponent<TextMeshPro>().text = "Выбирается минерал...";
@@ -56,29 +52,22 @@ namespace src.museum.quiz.script
     
         public void CheckMinerals()
         {
-            var wrongQuizItems = new List<QuizItem>(QuizComposer.AllItems);
             var requiredQuizItems = QuizComposer.SavedItems[gameObject];
-            wrongQuizItems.RemoveAll(quizItem => requiredQuizItems.Contains(quizItem));
-        
-            var mineralIsHere = requiredQuizItems.Any(quizItem => CalculateDistance(transform.position, quizItem.mineralCenter.position) < activatingDistance);
 
-            var otherMineralsAreNotHere = !wrongQuizItems.Any(quizItem => 
-                CalculateDistance(transform.position, quizItem.mineralCenter.position) < activatingDistance);
-        
-            if (mineralIsHere && otherMineralsAreNotHere)
+            var containsCorrectMinerals = requiredQuizItems.Any(quizItem => _contactsMinerals.Keys.Contains(quizItem));
+            var containsAllCorrectMinerals = requiredQuizItems.All(quizItem => _contactsMinerals.Keys.Contains(quizItem));
+            var containsWrongMinerals = _contactsMinerals.Keys.Any(quizItem => !requiredQuizItems.Contains(quizItem));
+            
+            if (containsAllCorrectMinerals && !containsWrongMinerals)
             {
-                ColorSelf(Color.green);
                 highlightRenderer.material = success;
                 return;
             }
-
-            if (mineralIsHere)
+            if (containsCorrectMinerals)
             {
-                ColorSelf(Color.yellow);
                 highlightRenderer.material = partialSuccess;
+                return;
             }
-            
-            ColorSelf(Color.red);
             highlightRenderer.material = failure;
         }
 
@@ -121,12 +110,33 @@ namespace src.museum.quiz.script
             }
         }
 
-        private float CalculateDistance(Vector3 firstPosition, Vector3 secondPosition)
+        private void OnCollisionEnter(Collision collision)
         {
-            var otherDx = firstPosition.x - secondPosition.x;
-            var otherDy = firstPosition.y - secondPosition.y;
-            var otherDz = firstPosition.z - secondPosition.z;
-            return (float) Math.Sqrt(otherDx * otherDx + otherDy * otherDy + otherDz * otherDz);
+            if (collision.gameObject.TryGetComponent(out QuizItem quizItem))
+            {
+                if (_contactsMinerals.TryGetValue(quizItem, out var collisions))
+                {
+                    collisions.Add(collision);
+                }
+                else
+                {
+                    _contactsMinerals.Add(quizItem, new List<Collision>());
+                }
+            }
+        }
+
+        
+        private void OnCollisionExit(Collision other)
+        {
+            if (other.gameObject.TryGetComponent(out QuizItem quizItem))
+            {
+                var collisions = _contactsMinerals[quizItem];
+                collisions.Remove(other);
+                if (collisions.Count == 0)
+                {
+                    _contactsMinerals.Remove(quizItem);
+                }
+            }
         }
     }
 }
