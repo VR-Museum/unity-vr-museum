@@ -23,8 +23,8 @@ namespace src.museum.quiz.script.decomposition
                 DecomposableMinerals.Remove(mineral);
                 QuizComposer.SavedItems.ForEach(pair => pair.Value.RemoveAll(item => item.MineralObject == mineral));
                 QuizComposer.AllItems.RemoveAll(item => item.MineralObject == mineral);
-                // decompositionItem.enabled = false;
-                Destroy(mineral);
+                decompositionItem.enabled = false;
+                // Destroy(mineral);
             }
         }
 

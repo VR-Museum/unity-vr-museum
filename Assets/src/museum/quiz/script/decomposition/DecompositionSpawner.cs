@@ -29,14 +29,18 @@ namespace src.museum.quiz.script.decomposition
                 var localScale = newMineral.transform.localScale;
                 var proportion = (float) Math.Pow(mineralData.newMineralSize, 1f / 3f);
                 localScale = new Vector3(
-                    localScale.x * MinAndMax(0.3f, 1f, proportion),
-                    localScale.y * MinAndMax(0.3f, 1f, proportion),
-                    localScale.z * MinAndMax(0.3f, 1f, proportion)
+                    localScale.x * MinAndMax(0.1f, 1f, proportion),
+                    localScale.y * MinAndMax(0.1f, 1f, proportion),
+                    localScale.z * MinAndMax(0.1f, 1f, proportion)
                 );
                 newMineral.transform.localScale = localScale;
                 foreach (var decompositionItem in newMineral.GetComponentsInChildren<DecompositionItem>())
                 {
                     decompositionItem.enabled = false;
+                }
+                foreach (var componentInChild in newMineral.GetComponentsInChildren<MineralAsButton>())
+                {
+                    componentInChild.startEnabled = true;
                 }
                 MineralsToSpawn.Remove(mineralData);
                 _previousSpawnTime = DateTime.Now;

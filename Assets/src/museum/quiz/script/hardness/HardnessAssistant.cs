@@ -5,7 +5,7 @@ using UnityEngine;
 namespace src.museum.quiz.script.hardness
 {
     [RequireComponent( typeof( MeshCollider ) )]
-    public class HardnessBrush : MonoBehaviour
+    public class HardnessAssistant : MonoBehaviour
     {
         public CustomRenderTexture hardnessHeightMap;
         public Material heightMapUpdate;
