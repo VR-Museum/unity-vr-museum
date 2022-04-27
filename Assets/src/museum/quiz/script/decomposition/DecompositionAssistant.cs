@@ -21,11 +21,16 @@ namespace src.museum.quiz.script.decomposition
                 var decompositionItem = mineral.GetComponent<DecompositionItem>();
                 Decompose(decompositionItem);
                 DecomposableMinerals.Remove(mineral);
-                QuizComposer.SavedItems.ForEach(pair => pair.Value.RemoveAll(item => item.MineralObject == mineral));
-                QuizComposer.AllItems.RemoveAll(item => item.MineralObject == mineral);
                 decompositionItem.enabled = false;
-                // Destroy(mineral);
+                // DestroyMineral(mineral);
             }
+        }
+
+        private void DestroyMineral(GameObject mineral)
+        {
+            QuizComposer.SavedItems.ForEach(pair => pair.Value.RemoveAll(item => item.MineralObject == mineral));
+            QuizComposer.AllItems.RemoveAll(item => item.MineralObject == mineral);
+            Destroy(mineral);
         }
 
         void Decompose(DecompositionItem originalItems)
@@ -37,10 +42,7 @@ namespace src.museum.quiz.script.decomposition
             var items = new List<DecompositionItem.DecompositionData>(originalItems.MineralPart);
             foreach (var mineral in items)
             {
-                if (DecompositionSpawner.MineralsToSpawn == null)
-                {
-                    DecompositionSpawner.MineralsToSpawn = new List<DecompositionItem.DecompositionData>();
-                }
+                DecompositionSpawner.MineralsToSpawn ??= new List<DecompositionItem.DecompositionData>();
                 DecompositionSpawner.MineralsToSpawn.Add(mineral);
             }
         }
