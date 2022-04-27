@@ -34,7 +34,10 @@ namespace src.museum.quiz.script.decomposition
                     localScale.z * MinAndMax(0.3f, 1f, proportion)
                 );
                 newMineral.transform.localScale = localScale;
-                newMineral.GetComponent<DecompositionItem>().enabled = false;
+                foreach (var decompositionItem in newMineral.GetComponentsInChildren<DecompositionItem>())
+                {
+                    decompositionItem.enabled = false;
+                }
                 MineralsToSpawn.Remove(mineralData);
                 _previousSpawnTime = DateTime.Now;
             }
