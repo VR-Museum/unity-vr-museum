@@ -2,7 +2,7 @@
 
 namespace src.museum.quiz.model.item
 {
-    public class MineralNameConverter
+    public static class MineralNameConverter
     {
         public static string Convert(MineralName mineralName)
         {
