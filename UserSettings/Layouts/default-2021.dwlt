@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 18
+  controlID: 64
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 19
+  controlID: 65
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 20
+  controlID: 46
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/prefabs
+    - Assets/src/museum/quiz/script/hardness
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources/prefabs
+  - Assets/src/museum/quiz/script/hardness
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Aleksey\Documents\github\nsu\vr-museum
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 485a0000
-    m_LastClickedID: 23112
-    m_ExpandedIDs: 00000000125a0000145a0000165a0000185a00001a5a00001c5a00001e5a0000205a000000ca9a3b
+    scrollPos: {x: 0, y: 705}
+    m_SelectedIDs: c2c20100
+    m_LastClickedID: 115394
+    m_ExpandedIDs: 00000000125a0000145a0000185a00001a5a00001c5a00001e5a0000205a00004a5a0000505a0000bc950000b8c20100bec2010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -404,7 +404,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -487,10 +487,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0a510000
-      m_LastClickedID: 20746
-      m_ExpandedIDs: 2cfbffff00520000c252000010530000b0530000
+      scrollPos: {x: 0, y: 415}
+      m_SelectedIDs: ea520000
+      m_LastClickedID: 21226
+      m_ExpandedIDs: a0effcffa2effcff9cf9ffffa2f9ffff1cfbffff22fbffff2cfbffff38510000465100008e51000094510000f451000000520000465200005c520000c252000010530000a8530000c4530000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -739,9 +739,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.0191216, y: 1.9110157, z: -1.2835772}
+    m_Target: {x: -4.7524858, y: 0.69590324, z: 0.3113757}
     speed: 2
-    m_Value: {x: 1.0191216, y: 1.9110157, z: -1.2835772}
+    m_Value: {x: -4.7524858, y: 0.69590324, z: 0.3113757}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -788,13 +788,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.010812917, y: -0.9973168, z: 0.044669013, w: -0.07224856}
+    m_Target: {x: -0.123490825, y: 0.29886585, z: -0.047440227, w: -0.94615245}
     speed: 2
-    m_Value: {x: -0.010869191, y: -0.996225, z: 0.04460876, w: -0.07367182}
+    m_Value: {x: -0.1232947, y: 0.29998103, z: -0.047577243, w: -0.9447466}
   m_Size:
-    m_Target: 0.37197587
+    m_Target: 0.70148396
     speed: 2
-    m_Value: 0.37197587
+    m_Value: 0.70148396
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -932,9 +932,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 633
+    y: 644
     width: 1467
-    height: 366
+    height: 355
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default

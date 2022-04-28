@@ -9,7 +9,6 @@ namespace src.museum.quiz.script
 {
     public class QuizComposer : MonoBehaviour
     {
-        public static List<QuizItem> NewItems;
         public static Dictionary<GameObject, List<QuizItem>> SavedItems;
         public static List<QuizItem> AllItems;
         public static List<IndicatorMineralsPairItem> IndicatorsItems;
@@ -18,36 +17,40 @@ namespace src.museum.quiz.script
         private DateTime _lastCheck = DateTime.Now;
         private const float CheckDelay = 3f;
 
+        public static QuizComposer _component = null;
+
         private void Start()
         {
-            NewItems ??= new List<QuizItem>();
             SavedItems ??= new Dictionary<GameObject, List<QuizItem>>();
             IndicatorsItems ??= new List<IndicatorMineralsPairItem>();
             AllItems = new List<QuizItem>();
+            if (_component == null)
+            {
+                _component = this;
+            }
+            else
+            {
+                throw new Exception("found more then one Quiz Composer");
+            }
         }
 
-        public void Update()
+        public void AddMineral(GameObject mineral)
         {
-            var itemsToRemove = new List<QuizItem>();
-            
-            foreach (var newItem in NewItems)
+            if (mineral.TryGetComponent<QuizItem>(out var component))
             {
                 foreach (var indicatorsItem in IndicatorsItems)
                 {
-                    if (indicatorsItem.UniqueExpectedMinerals.Contains(newItem.mineral))
+                    if (indicatorsItem.UniqueExpectedMinerals.Contains(component.mineral))
                     {
                         if (!SavedItems.ContainsKey(indicatorsItem.Indicator))
                         {
                             SavedItems.Add(indicatorsItem.Indicator, new List<QuizItem>());
                         }
-                        SavedItems[indicatorsItem.Indicator].Add(newItem);
+                        SavedItems[indicatorsItem.Indicator].Add(component);
                     }
                 }
-                AllItems.Add(newItem);
-                itemsToRemove.Add(newItem);
+                AllItems.Add(component);
             }
-
-            NewItems.RemoveAll(item => itemsToRemove.Contains(item));
         }
 
         public void Check()
@@ -75,7 +78,6 @@ namespace src.museum.quiz.script
 
         private void OnDestroy()
         {
-            NewItems = new List<QuizItem>();
             SavedItems = new Dictionary<GameObject, List<QuizItem>>();
             IndicatorsItems = new List<IndicatorMineralsPairItem>();
             AllItems = new List<QuizItem>();

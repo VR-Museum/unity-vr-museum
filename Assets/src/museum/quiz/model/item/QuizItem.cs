@@ -18,8 +18,7 @@ namespace src.museum.quiz.model.item
         private void Start()
         {
             MineralObject = gameObject;
-            QuizComposer.NewItems ??= new List<QuizItem>();
-            QuizComposer.NewItems.Add(this);
+            QuizComposer._component.AddMineral(gameObject);
         }
     }
 

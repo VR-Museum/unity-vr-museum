@@ -41,12 +41,13 @@ namespace src.museum.quiz.script.decomposition
             }
         }
 
-        public void DestroyMineral(GameObject mineral)
+        private void DestroyMineral(GameObject mineral)
         {
             QuizComposer.SavedItems.ForEach(pair => pair.Value.RemoveAll(item => item.MineralObject == mineral));
             QuizComposer.AllItems.RemoveAll(item => item.MineralObject == mineral);
             Destroy(mineral);
         }
+        
         private void OnDestroy()
         {
             DecomposableMinerals = new List<GameObject>();
