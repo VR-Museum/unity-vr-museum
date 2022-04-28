@@ -10,7 +10,6 @@ using Valve.VR.InteractionSystem;
 
 namespace src.museum.quiz.script
 {
-    
     [RequireComponent( typeof( MeshCollider ) )]
     [RequireComponent( typeof( Throwable ) )]
     [RequireComponent( typeof( VelocityEstimator) )]
@@ -19,7 +18,7 @@ namespace src.museum.quiz.script
     {
         public Boolean startEnabled = false;
         
-        private static List<MineralAsButton> _allObjectsInfo = new List<MineralAsButton>();
+        private static readonly List<MineralAsButton> AllObjectsInfo = new List<MineralAsButton>();
         
         private List<GameObject> _slides;
         private Boolean _showingSlides;
@@ -43,8 +42,7 @@ namespace src.museum.quiz.script
             UpdateAllSlidesRenderers(false);
             
             enabled = startEnabled;
-            
-            _allObjectsInfo.Add(this);
+            AllObjectsInfo.Add(this);
         }
         
         [UsedImplicitly]
@@ -84,7 +82,7 @@ namespace src.museum.quiz.script
                 }
                 else
                 {
-                    foreach (var objectInfo in _allObjectsInfo)
+                    foreach (var objectInfo in AllObjectsInfo)
                     {
                         if (objectInfo._showingSlides)
                         {
@@ -131,7 +129,7 @@ namespace src.museum.quiz.script
             }
         }
 
-        private void HideInformation()
+        public void HideInformation()
         {
             UpdateAllSlidesRenderers(false);
             _showingSlides = false;
