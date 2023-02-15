@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &895267935209406450
+--- !u!1 &8205957170793131179
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8276083464569760969}
-  - component: {fileID: 6489020018750657923}
-  - component: {fileID: 7721451740530946327}
+  - component: {fileID: 8839081990989936145}
+  - component: {fileID: 5549949490046106036}
+  - component: {fileID: 5616433992824196638}
+  - component: {fileID: 5549949490046106045}
+  - component: {fileID: 5549949490046106046}
+  - component: {fileID: 5549949490046106047}
+  - component: {fileID: 5549949490046106032}
+  - component: {fileID: 5549949490046106033}
+  - component: {fileID: 5549949490046106034}
+  - component: {fileID: 5549949490046106035}
   m_Layer: 0
-  m_Name: default
+  m_Name: Agate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8276083464569760969
+--- !u!4 &8839081990989936145
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895267935209406450}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_GameObject: {fileID: 8205957170793131179}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.237, y: 1.188, z: 1.548}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 8839081991093034385}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6489020018750657923
+--- !u!33 &5549949490046106036
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895267935209406450}
+  m_GameObject: {fileID: 8205957170793131179}
   m_Mesh: {fileID: -2432090755550338912, guid: 2ec5be3b0b2a9714aad77e029c0a15e9, type: 3}
---- !u!23 &7721451740530946327
+--- !u!23 &5616433992824196638
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895267935209406450}
+  m_GameObject: {fileID: 8205957170793131179}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -83,86 +90,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &8205957170556520235
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8839081991093034385}
-  m_Layer: 0
-  m_Name: model
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8839081991093034385
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8205957170556520235}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000045071807, y: 0.00005128139, z: 0.00002371195}
-  m_LocalScale: {x: 0.025641024, y: 0.025641024, z: 0.025641024}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8276083464569760969}
-  m_Father: {fileID: 8839081990989936145}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8205957170793131179
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8839081990989936145}
-  - component: {fileID: 5549949490046106036}
-  - component: {fileID: 5549949490046106045}
-  - component: {fileID: 5549949490046106046}
-  - component: {fileID: 5549949490046106047}
-  - component: {fileID: 5549949490046106032}
-  - component: {fileID: 5549949490046106033}
-  - component: {fileID: 5549949490046106034}
-  - component: {fileID: 5549949490046106035}
-  m_Layer: 0
-  m_Name: Agate
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8839081990989936145
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8205957170793131179}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.237, y: 1.188, z: 1.548}
-  m_LocalScale: {x: 6, y: 6, z: 6}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 8839081991093034385}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5549949490046106036
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8205957170793131179}
-  m_Mesh: {fileID: -2432090755550338912, guid: 025504bebddc97d47bfb9f3c2552b838, type: 3}
 --- !u!64 &5549949490046106045
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -329,6 +256,7 @@ MonoBehaviour:
   mineral: 17
   mineralCenter: {fileID: 8839081990989936145}
   hardness: 7
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &5549949490046106035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,3 +285,4 @@ MonoBehaviour:
   engaged: 0
   buttonDown: 0
   buttonUp: 0
+  startEnabled: 0

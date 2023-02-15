@@ -45,12 +45,8 @@ Shader "Custom/ColorTextureUpdate"
                 float4 color = tex2D(_SelfTexture2D, IN.localTexcoord.xy);
                 float4 newColor = (1 - smoothstep(_innerRadius, _outerRadius, distance(IN.localTexcoord.xy, _DrawingPoint) / _smoothMultiplier))
                  * _DrawingColor;
-                /*float4 testColor = (1 - smoothstep(_innerRadius, _outerRadius, distance(IN.localTexcoord.xy, proection) / _smoothMultiplier))
-                 * _DrawingColor;*/
-                float4 testColor = /*((((IN.localTexcoord.x >= _TestPoint1.x && IN.localTexcoord.x <= _TestPoint2.x) || (IN.localTexcoord.x <= _TestPoint1.x && IN.localTexcoord.x >= _TestPoint2.x) || IN.localTexcoord.x == _TestPoint2.x || IN.localTexcoord.x == _TestPoint1.x)
-                 && ((IN.localTexcoord.y >= _TestPoint1.y && IN.localTexcoord.y <= _TestPoint2.y) || (IN.localTexcoord.y <= _TestPoint1.y && IN.localTexcoord.y >= _TestPoint2.y)) || IN.localTexcoord.y == _TestPoint2.y || IN.localTexcoord.y == _TestPoint1.y) ? */
+                float4 testColor = 
                  (1 - smoothstep(_innerRadius, _outerRadius, distance(IN.localTexcoord.xy, proection) / _smoothMultiplier))
-                // : (1 - smoothstep(_innerRadius, _outerRadius, min(distance(IN.localTexcoord.xy, _TestPoint1), distance(IN.localTexcoord.xy, _TestPoint2)))))
                  * _DrawingColor / _smoothMultiplier;
 
                 return max(testColor, max(color, newColor));
