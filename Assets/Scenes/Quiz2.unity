@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7126,7 +7126,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hardnessHeightMap: {fileID: 8600000, guid: 4fb228b865165ad4e9ba42505ff71af3, type: 2}
+  colorTexture: {fileID: 8600000, guid: 5f9d739f5f45b8242850c6b68ff7c52a, type: 2}
   heightMapUpdate: {fileID: 2100000, guid: f2c40bcc234efb747880efbade95c99a, type: 2}
+  colorTextureMaterial: {fileID: 2100000, guid: 2aa9576acb67bc84baccb628622a25d6, type: 2}
   hardnessMultiplier: 10
   hardnessText: {fileID: 517424492}
 --- !u!64 &1348402559

@@ -14,6 +14,7 @@ namespace src.museum.quiz.model.item
         [NonSerialized]
         public GameObject MineralObject;
         public float hardness = 5;
+        public Color color = Color.red;
 
         private void Start()
         {

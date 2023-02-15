@@ -31,7 +31,6 @@ Shader "HardnessMapUpdate"
                 float4 color = tex2D(_SelfTexture2D, IN.localTexcoord.xy);
                 float4 newColor = smoothstep(_innerRadius, _outerRadius, distance(IN.localTexcoord.xy, _ContactPosition) / _smoothMultiplier);
                 
-                
                 return min(color, newColor);
             }
             ENDCG
