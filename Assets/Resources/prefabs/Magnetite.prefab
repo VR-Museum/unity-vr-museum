@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 416586893058632968}
   - component: {fileID: 3632109149960594093}
+  - component: {fileID: 2824042322144025895}
   - component: {fileID: 1045911805620631469}
   - component: {fileID: 1045911805620631468}
   - component: {fileID: 1045911805620631471}
@@ -17,6 +18,7 @@ GameObject:
   - component: {fileID: 1045911805620631473}
   - component: {fileID: 1045911805620631472}
   - component: {fileID: 1045911805620631475}
+  - component: {fileID: 6682102715313924357}
   m_Layer: 0
   m_Name: Magnetite
   m_TagString: Untagged
@@ -36,7 +38,7 @@ Transform:
   m_LocalScale: {x: 1.4999999, y: 1.4999999, z: 1.4999999}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 185233114343374340}
+  - {fileID: 1051359076957240893}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47,7 +49,50 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045911805620631474}
-  m_Mesh: {fileID: -7965538787910583968, guid: 7d87b5e7c7343ae4cbc1c16ac34a0fd9, type: 3}
+  m_Mesh: {fileID: 2897153874886873651, guid: f977a2dcb2f1ac049aff232d04cca69f, type: 3}
+--- !u!23 &2824042322144025895
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045911805620631474}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4cd9f2888cba4574fa527161a65488ee, type: 2}
+  - {fileID: 2100000, guid: 7f26dd7b6b2fa384f8b38e72580feac2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &1045911805620631469
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -214,6 +259,7 @@ MonoBehaviour:
   mineral: 26
   mineralCenter: {fileID: 416586893058632968}
   hardness: 6
+  color: {r: 0.13333334, g: 0.121568635, b: 0.11764707, a: 1}
 --- !u!114 &1045911805620631475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,7 +288,23 @@ MonoBehaviour:
   engaged: 0
   buttonDown: 0
   buttonUp: 0
---- !u!1 &4221052476538506726
+  startEnabled: 0
+--- !u!114 &6682102715313924357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045911805620631474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3de9c0f6a587b43a9f830e0c80586e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChildPosition: {x: 4, y: 0, z: 4}
+  TimeForNoSlashing: 1
+  MaxSlicesCount: 2
+--- !u!1 &8897169619346710592
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -250,78 +312,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 185233114343374340}
-  - component: {fileID: 1491624485171997358}
-  - component: {fileID: 2586040384828060419}
+  - component: {fileID: 1051359076957240893}
   m_Layer: 0
-  m_Name: MagnetiteRock
+  m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &185233114343374340
+--- !u!4 &1051359076957240893
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4221052476538506726}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000054345855, y: -0.00012771993, z: 0.0002531646}
-  m_LocalScale: {x: 0.025316456, y: 0.025316456, z: 0.025316456}
+  m_GameObject: {fileID: 8897169619346710592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 416586893058632968}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1491624485171997358
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4221052476538506726}
-  m_Mesh: {fileID: 2897153874886873651, guid: f977a2dcb2f1ac049aff232d04cca69f, type: 3}
---- !u!23 &2586040384828060419
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4221052476538506726}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 4cd9f2888cba4574fa527161a65488ee, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}

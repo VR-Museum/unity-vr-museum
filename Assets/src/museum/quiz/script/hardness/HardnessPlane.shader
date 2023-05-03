@@ -5,7 +5,8 @@ Shader "HardnessPlane"
         _Color ("Color", Color) = (1,1,1,1)
         _BottomColor ("Bottom Color", Color) = (.1,.1,.1,1)
         _NormalMap ("Normal Map", 2D) = "white" {}
-        _MainTex ("Albedo (RGB)", 2D) = "white" {}
+        _MainTex ("MainTex", 2D) = "white" {}
+        _ColorTex ("Color", 2D) = "white" {}
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
         _Metallic ("Metallic", Range(0,1)) = 0.0
         
@@ -28,6 +29,7 @@ Shader "HardnessPlane"
         sampler2D _MainTex;
         sampler2D _HeightMap;
         sampler2D _NormalMap;
+        sampler2D _ColorTex;
 
         struct Input
         {

@@ -22,9 +22,9 @@ namespace src.museum.quiz.script.random
         private readonly Random _random = new Random((int) DateTime.Now.ToBinary());
         
         private float _spawnDelay = 0.3f;
-        private DateTime _previousSpawnTime;
+        private DateTime _previousSpawnTime = DateTime.Now;
 
-        private List<GameObject> _mineralsToSpawn;
+        private List<GameObject> _mineralsToSpawn = new List<GameObject>();
 
         public void Start()
         {

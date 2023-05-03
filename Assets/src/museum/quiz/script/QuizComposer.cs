@@ -19,7 +19,7 @@ namespace src.museum.quiz.script
 
         public static QuizComposer _component = null;
 
-        private void Start()
+        private void Awake()
         {
             SavedItems ??= new Dictionary<GameObject, List<QuizItem>>();
             IndicatorsItems ??= new List<IndicatorMineralsPairItem>();

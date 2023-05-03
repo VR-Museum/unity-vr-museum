@@ -329,6 +329,7 @@ MonoBehaviour:
   mineral: 23
   mineralCenter: {fileID: 1675794782348846197}
   hardness: 7
+  color: {r: 0.25882354, g: 0.3137255, b: 0.25490198, a: 1}
 --- !u!114 &5661075202045152581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,3 +358,4 @@ MonoBehaviour:
   engaged: 0
   buttonDown: 0
   buttonUp: 0
+  startEnabled: 0

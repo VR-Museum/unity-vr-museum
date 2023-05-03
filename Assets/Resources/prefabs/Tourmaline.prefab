@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5945423963195026192}
   - component: {fileID: 5945423963195026207}
   - component: {fileID: 5945423963195026206}
+  - component: {fileID: 2003054479871838259}
   m_Layer: 0
   m_Name: Tourmaline
   m_TagString: Untagged
@@ -32,14 +33,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4458692893231749942}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.22, y: 1.184, z: 1.54}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &5945423963195026205
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -69,6 +70,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 7258343418837397324, guid: 032bb28b2c4ea3544b5bc09b31521098, type: 3}
+  - {fileID: 2100000, guid: e9942acbeff1c5a4087372a3302dd92c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -256,6 +258,7 @@ MonoBehaviour:
   mineral: 13
   mineralCenter: {fileID: 1902076421209568285}
   hardness: 7.5
+  color: {r: 0.3254902, g: 0.30588236, b: 0.26666668, a: 1}
 --- !u!114 &5945423963195026206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,3 +287,19 @@ MonoBehaviour:
   engaged: 0
   buttonDown: 0
   buttonUp: 0
+  startEnabled: 0
+--- !u!114 &2003054479871838259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4458692893231749942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3de9c0f6a587b43a9f830e0c80586e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChildPosition: {x: 4, y: 0, z: 4}
+  TimeForNoSlashing: 1
+  MaxSlicesCount: 2

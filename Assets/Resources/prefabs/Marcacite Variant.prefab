@@ -36,6 +36,18 @@ PrefabInstance:
       value: 94
       objectReference: {fileID: 0}
     - target: {fileID: 3063200922452367013, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
+      propertyPath: color.b
+      value: 0.24313727
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063200922452367013, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
+      propertyPath: color.g
+      value: 0.27058825
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063200922452367013, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
+      propertyPath: color.r
+      value: 0.27450982
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063200922452367013, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
       propertyPath: hardness
       value: 10
       objectReference: {fileID: 0}
