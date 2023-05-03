@@ -4058,7 +4058,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668770171}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dcd740b76f874fd4a1bbddae1d058616, type: 3}
   m_Name: 
@@ -4108,18 +4108,30 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668770171}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dcd740b76f874fd4a1bbddae1d058616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefabsPaths:
-  - prefabs/Obsidian
-  - prefabs/Chrysoprase
   - prefabs/Calcite
+  - prefabs/Halite
+  - prefabs/Vanadinite
+  - prefabs/Sfaleryt
+  - prefabs/Tourmaline
+  - prefabs/Azurite
+  - prefabs/Kianite
+  - prefabs/Agate
+  - prefabs/Apatite
+  - prefabs/Epidote
+  - prefabs/Obsidian
+  - prefabs/Diopside
+  - prefabs/Magnetite
+  - prefabs/Talc
+  - prefabs/Actinolite
+  - prefabs/Sapphire
   - prefabs/Topaz
   - prefabs/Jasper
-  - prefabs/Azurite
   stands:
   - {fileID: 2092800997}
   - {fileID: 1056597226}
