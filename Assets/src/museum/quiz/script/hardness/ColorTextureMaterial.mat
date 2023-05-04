@@ -81,9 +81,9 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _ContactPosition: {r: 0.5, g: 0.5, b: 0, a: 0}
-    - _DrawingColor: {r: 1, g: 0.62388283, b: 0.5235849, a: 1}
+    - _DrawingColor: {r: 0.09019608, g: 0.23529413, b: 0.25882354, a: 1}
     - _DrawingPoint: {r: -2, g: -2, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TestPoint1: {r: 0.8450873, g: 0.3407439, b: 0, a: 0}
-    - _TestPoint2: {r: 0.8460978, g: 0.34235382, b: 0, a: 0}
+    - _TestPoint1: {r: 0.99584186, g: 0.9958415, b: 0, a: 0}
+    - _TestPoint2: {r: 0.99889284, g: 0.9988925, b: 0, a: 0}
   m_BuildTextureStacks: []
