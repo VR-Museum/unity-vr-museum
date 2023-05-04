@@ -21,8 +21,8 @@ namespace src.museum.quiz.script.hardness
         private static readonly int ContactPosition = Shader.PropertyToID("_ContactPosition");
         private static readonly int SmoothMultiplier = Shader.PropertyToID("_smoothMultiplier");
         private static readonly int DrawingColor = Shader.PropertyToID("_DrawingColor");
-        private static readonly int TestPoint1 = Shader.PropertyToID("_TestPoint1");
-        private static readonly int TestPoint2 = Shader.PropertyToID("_TestPoint2");
+        private static readonly int Point1 = Shader.PropertyToID("_Point1");
+        private static readonly int Point2 = Shader.PropertyToID("_Point2");
         [SerializeField] private LayerMask PlaneLayer;
         private readonly int HardnessBorder = 5;
         private readonly Vector3 UndrawingPoint = new Vector3(-2f, -2f, 0);
@@ -34,7 +34,6 @@ namespace src.museum.quiz.script.hardness
             heightMapUpdate.SetVector(ContactPosition, new Vector2(-2f, -2f));
             hardnessHeightMap.Initialize();
             colorTexture.Initialize();
-            Debug.Log(transform.position);
         }
 
         private void OnCollisionEnter(Collision collision)
@@ -61,8 +60,8 @@ namespace src.museum.quiz.script.hardness
                     var hitCoordinate = hit.textureCoord;
                     if(quizItem.hardness < HardnessBorder)
                     {
-                        colorTextureMaterial.SetVector(TestPoint1, _previousPoint);
-                        colorTextureMaterial.SetVector(TestPoint2, hitCoordinate);
+                        colorTextureMaterial.SetVector(Point1, _previousPoint);
+                        colorTextureMaterial.SetVector(Point2, hitCoordinate);
                         colorTextureMaterial.SetVector(DrawingColor, quizItem.color);
                         colorTexture.Update();
                         _previousPoint = hitCoordinate;

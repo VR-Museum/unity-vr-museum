@@ -6,8 +6,8 @@ Shader "Custom/ColorTextureUpdate"
         _innerRadius ("Inner Radius", float) = 0.005
         _outerRadius ("Outer Radius", float) = 0.01
         _smoothMultiplier ("Smooth Multiplier", float) = 2
-        _TestPoint1 ("T1", Vector) = (0.5, 0.5, 0, 0)
-        _TestPoint2 ("T2", Vector) = (0.6, 0.5, 0, 0)
+        _Point1 ("Point1", Vector) = (0.5, 0.5, 0, 0)
+        _Point2 ("Point2", Vector) = (0.6, 0.5, 0, 0)
     }
     SubShader
     {
@@ -26,19 +26,19 @@ Shader "Custom/ColorTextureUpdate"
             float _innerRadius;
             float _outerRadius;
             float _smoothMultiplier;
-            float4 _TestPoint1;
-            float4 _TestPoint2;
+            float4 _Point1;
+            float4 _Point2;
 
             float4 frag(v2f_customrendertexture IN) : COLOR
             {
-                float A = 1 / (_TestPoint2.x - _TestPoint1.x);
-                float B = -1 / (_TestPoint2.y - _TestPoint1.y);
-                float C = _TestPoint1.y / (_TestPoint2.y - _TestPoint1.y) - _TestPoint1.x / (_TestPoint2.x - _TestPoint1.x);
+                float A = 1 / (_Point2.x - _Point1.x);
+                float B = -1 / (_Point2.y - _Point1.y);
+                float C = _Point1.y / (_Point2.y - _Point1.y) - _Point1.x / (_Point2.x - _Point1.x);
                 float Z = C + A * IN.localTexcoord.y - B * IN.localTexcoord.x;
                 float y = (-B * C + A * (Z - C)) / (A * A + B * B);
                 float x = (A * y - Z + C) / B;
-                float proectionX = ((x >= _TestPoint1.x && x <= _TestPoint2.x) || (x <= _TestPoint1.x && x >= _TestPoint2.x) || x == _TestPoint1.x || x == _TestPoint2.x) ? x : ((distance(x, _TestPoint1.x) < distance(x, _TestPoint2.x)) ? _TestPoint1.x : _TestPoint2.x);
-                float proectionY = ((y >= _TestPoint1.y && y <= _TestPoint2.y) || (y <= _TestPoint1.y && y >= _TestPoint2.y) || y == _TestPoint1.y || y == _TestPoint2.y) ? y : ((distance(y, _TestPoint1.y) < distance(y, _TestPoint2.y)) ? _TestPoint1.y : _TestPoint2.y);
+                float proectionX = ((x >= _Point1.x && x <= _Point2.x) || (x <= _Point1.x && x >= _Point2.x) || x == _Point1.x || x == _Point2.x) ? x : ((distance(x, _Point1.x) < distance(x, _Point2.x)) ? _Point1.x : _Point2.x);
+                float proectionY = ((y >= _Point1.y && y <= _Point2.y) || (y <= _Point1.y && y >= _Point2.y) || y == _Point1.y || y == _Point2.y) ? y : ((distance(y, _Point1.y) < distance(y, _Point2.y)) ? _Point1.y : _Point2.y);
                 float4 proection = float4(proectionX, proectionY, 0, 0);
                 float4 color = tex2D(_SelfTexture2D, IN.localTexcoord.xy);
                 float4 newColor = 
