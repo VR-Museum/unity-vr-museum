@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8982951671735476554}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 7916984129245448983}
   - component: {fileID: 7916984129245448982}
   - component: {fileID: 4152525400640692049}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sfaleryt
   m_TagString: Untagged
   m_Icon: {fileID: 0}

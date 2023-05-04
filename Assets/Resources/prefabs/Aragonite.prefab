@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9681142355853552}
   - component: {fileID: 9681142355853559}
   - component: {fileID: 9681142355853558}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Aragonite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 4610994792182954117}
   - component: {fileID: 1669326970491470287}
   - component: {fileID: 2742443855587353947}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1151806649545537177}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}

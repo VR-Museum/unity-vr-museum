@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 8383106808836207054}
   - component: {fileID: 8383106808836207055}
   - component: {fileID: 8383106808836207052}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Antimonite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6826308473740334151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}

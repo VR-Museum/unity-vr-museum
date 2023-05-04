@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 5828405654025317595}
   - component: {fileID: 5828405654025317596}
   - component: {fileID: 7020270244474455752}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Talc
   m_TagString: Untagged
   m_Icon: {fileID: 0}

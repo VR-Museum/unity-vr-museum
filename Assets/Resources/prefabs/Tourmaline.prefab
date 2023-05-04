@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 5945423963195026207}
   - component: {fileID: 5945423963195026206}
   - component: {fileID: 2003054479871838259}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tourmaline
   m_TagString: Untagged
   m_Icon: {fileID: 0}

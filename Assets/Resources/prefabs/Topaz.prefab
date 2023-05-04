@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1192938121323094713}
   - component: {fileID: 1192938121323094714}
   - component: {fileID: 2156074164709525047}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Topaz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5327583394468943134}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3421164241457119700}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 5896533601954341890}
   - component: {fileID: 5896533601954341891}
   - component: {fileID: 7687907356423157069}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Kianite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

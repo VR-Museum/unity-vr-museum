@@ -3190,7 +3190,7 @@ GameObject:
   - component: {fileID: 517424493}
   - component: {fileID: 517424495}
   - component: {fileID: 517424494}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4475,7 +4475,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 774997361}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HardnessStand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7187,7 +7187,7 @@ GameObject:
   - component: {fileID: 1348402560}
   - component: {fileID: 1348402559}
   - component: {fileID: 1348402558}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7227,6 +7227,9 @@ MonoBehaviour:
   colorTextureMaterial: {fileID: 2100000, guid: 2aa9576acb67bc84baccb628622a25d6, type: 2}
   hardnessMultiplier: 10
   hardnessText: {fileID: 517424492}
+  PlaneLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!64 &1348402559
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7608,7 +7611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1391282970}
   - component: {fileID: 1391282971}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10105,7 +10108,7 @@ GameObject:
   - component: {fileID: 1935315347}
   - component: {fileID: 1935315350}
   - component: {fileID: 1935315349}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ColorPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}

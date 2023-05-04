@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1045911805620631472}
   - component: {fileID: 1045911805620631475}
   - component: {fileID: 6682102715313924357}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Magnetite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1051359076957240893}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -2,7 +2,6 @@ Shader "Custom/ColorTextureUpdate"
 {
     Properties
     {
-        _DrawingPoint ("Drawing Point", Vector) = (-2, -2, 0, 0)
         _DrawingColor ("Drawing Color", Color) = (1, 0, 0, 1)
         _innerRadius ("Inner Radius", float) = 0.005
         _outerRadius ("Outer Radius", float) = 0.01
@@ -22,8 +21,7 @@ Shader "Custom/ColorTextureUpdate"
             #pragma vertex CustomRenderTextureVertexShader
             #pragma fragment frag
             #pragma target 3.0
-            
-            float4 _DrawingPoint;
+
             float4 _DrawingColor;
             float _innerRadius;
             float _outerRadius;
@@ -43,13 +41,11 @@ Shader "Custom/ColorTextureUpdate"
                 float proectionY = ((y >= _TestPoint1.y && y <= _TestPoint2.y) || (y <= _TestPoint1.y && y >= _TestPoint2.y) || y == _TestPoint1.y || y == _TestPoint2.y) ? y : ((distance(y, _TestPoint1.y) < distance(y, _TestPoint2.y)) ? _TestPoint1.y : _TestPoint2.y);
                 float4 proection = float4(proectionX, proectionY, 0, 0);
                 float4 color = tex2D(_SelfTexture2D, IN.localTexcoord.xy);
-                float4 newColor = (1 - smoothstep(_innerRadius, _outerRadius, distance(IN.localTexcoord.xy, _DrawingPoint) / _smoothMultiplier))
-                 * _DrawingColor;
-                float4 testColor = 
+                float4 newColor = 
                  (1 - smoothstep(_innerRadius, _outerRadius, distance(IN.localTexcoord.xy, proection) / _smoothMultiplier))
                  * _DrawingColor / _smoothMultiplier;
 
-                return max(testColor, max(color, newColor));
+                return max(color, newColor);
             }
             ENDCG
         }

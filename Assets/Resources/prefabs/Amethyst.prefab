@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6514276236146658594}
   - component: {fileID: 6514276236146658595}
   - component: {fileID: 6514276236146658592}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Amethyst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3941955051366385226}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 4128911456200277654}
   - component: {fileID: 1268880724077414364}
   - component: {fileID: 2359396280546534216}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}

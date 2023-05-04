@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1031805664940229878}
   - component: {fileID: 1031805664940229877}
   - component: {fileID: 1599420027}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Vanadinite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

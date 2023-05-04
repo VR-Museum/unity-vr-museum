@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5811051971392499224}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 4942930114311003667}
   - component: {fileID: 4942930114311003666}
   - component: {fileID: 4942930114311003665}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Citrine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 274626707348760174}
   - component: {fileID: 3105377994818559780}
   - component: {fileID: 1890736637413604272}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}

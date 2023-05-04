@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 3423014357324259951}
   - component: {fileID: 3423014357324259950}
   - component: {fileID: 3503122021931331755}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sapphire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7743315118397478829}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}

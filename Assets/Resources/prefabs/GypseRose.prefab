@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2529530620552529320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 4449025489638882363}
   - component: {fileID: 4449025489638882362}
   - component: {fileID: 4449025489638882341}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GypseRose
   m_TagString: Untagged
   m_Icon: {fileID: 0}

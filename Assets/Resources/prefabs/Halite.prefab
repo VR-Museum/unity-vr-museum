@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 4563270413989312626}
   - component: {fileID: 4563270413989312627}
   - component: {fileID: 8599306185522622176}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Halite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6276096427188573207}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}

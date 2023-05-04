@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1675794782348846197}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 6987755338035544564}
   - component: {fileID: 5201183857668323518}
   - component: {fileID: 8722323524023475242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 5661075202045152579}
   - component: {fileID: 5661075202045152578}
   - component: {fileID: 5661075202045152581}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chrysoprase
   m_TagString: Untagged
   m_Icon: {fileID: 0}

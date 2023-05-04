@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 6822349963794086530}
   - component: {fileID: 6822349963794086531}
   - component: {fileID: 6336778160448207472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Azurite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5693730120272663107}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: center
   m_TagString: Untagged
   m_Icon: {fileID: 0}

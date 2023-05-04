@@ -7,6 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2757263809698405580, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2757263809730825912, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2757263810135716620, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2757263810604061968, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
       propertyPath: m_LocalScale.x
       value: -4.5
@@ -62,6 +74,10 @@ PrefabInstance:
     - target: {fileID: 3063200922452367018, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
       propertyPath: m_Name
       value: Marcacite Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063200922452367018, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3063200922452367038, guid: 3ee2c1997d27f7d44b3249970bb6fe14, type: 3}
       propertyPath: m_RootOrder
