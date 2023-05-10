@@ -24,7 +24,7 @@ Material:
     m_Floats:
     - _innerRadius: 0.001
     - _outerRadius: 0.04
-    - _smoothMultiplier: 0.5
+    - _smoothMultiplier: 0.7
     m_Colors:
-    - _ContactPosition: {r: 0.5359945, g: 0.6502962, b: 0, a: 0}
+    - _ContactPosition: {r: 0.93070054, g: 0.37972164, b: 0, a: 0}
   m_BuildTextureStacks: []
